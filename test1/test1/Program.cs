@@ -6,9 +6,9 @@ namespace test1
     {
         static void Main(string[] args)
         {
-            double s1;
+           
 
-            s1 = MathResolver.GetVectorLenght
+            Utils.GetMinValue(1, 5);
 
 
         }
