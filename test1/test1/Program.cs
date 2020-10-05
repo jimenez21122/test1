@@ -10,6 +10,8 @@ namespace test1
 
             Utils.GetMinValue(1, 5);
 
+            Ejercicios.Ejercicio2(16);
+
 
         }
         

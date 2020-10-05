@@ -22,9 +22,7 @@ namespace test1
 
             }
         }
-    }
-    
-{          
+
         // IsEven devuelve el valor true si el valor es par y false en caso contrario.
         public static bool IsEven(int value)
         {
@@ -34,7 +32,27 @@ namespace test1
                 return false;
         }
 
+        public static bool IsPrime( int number)
+        {
+            int i = 2;
+            while (i < number)
+            {
+                if ((number % i) == 0)
+                return false;
+                i++;
+            }
+                return true;    
+
+        }
+
+    }
+}
+
+
+
     
 
-}
-    }
+
+
+
+
