@@ -14,7 +14,7 @@ namespace test1
             }
             else
             {
-                if (a < b) ;
+                if (a < b);
             }
             return b;
             {
@@ -42,9 +42,7 @@ namespace test1
                 i++;
             }
                 return true;    
-
         }
-
     }
 }
 

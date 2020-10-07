@@ -6,11 +6,13 @@ namespace test1
     {
         static void Main(string[] args)
         {
-           
+            int i = 2;
+            while (i < 100 )
+            {
+                Ejercicios.Ejercicio3(i);
+            }
 
-            Utils.GetMinValue(1, 5);
-
-            Ejercicios.Ejercicio2(16);
+            
 
 
         }

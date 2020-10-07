@@ -37,8 +37,15 @@ namespace test1
 
         public static void Ejercicio3(int number)
         {
-            Utils.IsPrime(137)
-                System.Console.WriteLine
+            int i = 2;
+            while (i < number)
+            {
+                if (Utils.IsPrime(i))
+                    System.Console.WriteLine(number + " no es primo");
+            
+                else
+                    System.Console.WriteLine(number + " es primo");
+            }
         }
     }
 }
