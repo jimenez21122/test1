@@ -6,9 +6,13 @@ namespace test1
     {
         static void Main(string[] args)
         {
-            double s1;
+            int i = 2;
+            while (i < 100 )
+            {
+                Ejercicios.Ejercicio3(i);
+            }
 
-            s1 = MathResolver.GetVectorLenght
+            
 
 
         }
