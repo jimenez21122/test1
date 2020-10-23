@@ -97,7 +97,7 @@ namespace test1
                 i++;
             }
         }
-        //ejrcicio: ¿Te acuerdas de Gibonacci pues yo tampoco, imprime la siguiente serie: 0, 1, 1, 2, 3, 5, 8...
+        //ejrcicio: ¿Te acuerdas de Fibonacci pues yo tampoco, imprime la siguiente serie: 0, 1, 1, 2, 3, 5, 8...
         public static void Ejercicio8()
         {
             int i = 0;
@@ -115,6 +115,18 @@ namespace test1
 
                 i++;
             }
+        }
+        //ejercicio: imprime por pantalla tantos asteriscos como el número que escribas
+        public static void Asteriscos(int count)
+        {
+            int i = 0;
+            while (i < count)
+            {
+                System.Console.WriteLine("*");
+                i++;
+
+            }
+
         }
     }
 }
