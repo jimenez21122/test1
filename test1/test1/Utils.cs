@@ -43,6 +43,9 @@ namespace test1
             }
                 return true;    
         }
+        //public static int Count( int i)
+
+
     }
 }
 
