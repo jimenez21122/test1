@@ -126,7 +126,15 @@ namespace test1
                 i++;
 
             }
+        }
 
+        //ejercicio: Igual pero usando for
+        public static void Asteriscosfor(int count)
+        {
+            for (int i = 0; i<= count; i++)
+            {
+                System.Console.WriteLine("*");
+            }
         }
     }
 }

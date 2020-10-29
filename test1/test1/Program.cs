@@ -6,18 +6,9 @@ namespace test1
     {
         static void Main(string[] args)
         {
-            Ejercicios.Asteriscos(10);
-
-                
-
-           
-
+            EjerciciosExámen.MinValue(3 , 1);
+            System.Console.WriteLine("el resutado mínimo es: " + Ejerci
             
-
-
         }
-        
     }
-
-
 }
