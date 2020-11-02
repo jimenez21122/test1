@@ -6,8 +6,7 @@ namespace test1
     {
         static void Main(string[] args)
         {
-            EjerciciosExámen.MinValue(3 , 1);
-            System.Console.WriteLine("el resutado mínimo es: " + Ejerci
+            EjerciciosExámen.SerieContinuaV2(14);
             
         }
     }
