@@ -49,7 +49,7 @@ namespace test1
         }
         //Ejercicio 6: Hacer una función que reciba 2 enteros y devuelva -1 si el primero es menos que el segundo 
         // +1 si el segundo es menor que el primero, 0 en cualquier otro caso (que sean iguales)
-        public static int compare (int a, int b)
+        public static int compare(int a, int b)
         {
             if (a < b)
                 return -1;
@@ -58,7 +58,7 @@ namespace test1
             return 0;
         }
         //Ejercicio 7: Hcer una función que te devuelva el menor de tres enteros
-        public static int Get3MinValue (int a, int b, int c)
+        public static int Get3MinValue(int a, int b, int c)
         {
             if (a <= b && a <= c)
                 return a;
@@ -89,7 +89,7 @@ namespace test1
          "error desconocido en cualquier otro caso"*/
         public static void PrintError(int code)
         {
-            switch(code)
+            switch (code)
             {
                 case 0:
                     System.Console.WriteLine("Error Grave");
@@ -108,36 +108,73 @@ namespace test1
         /*Hacer una función a la que se le pase un número e imprima por pantalla la siguiente serie:
         función(10)-> 0,3,6,9
         función (15)-> 0,3,6,9,12,15*/
-        public static void Add3( int n)
+        public static void Add3(int n)
         {
             int i = 0;
             while (i <= n)
             {
 
                 System.Console.Write(i + ",");
-                i+= 3;
+                i += 3;
             }
         }
         /*Hacer una función a la que se le pase un número e imprima por pantalla la siguiente serie:
          Serie(10)-> 0,1,2,3,4,5,6,7,8,9,*/
-        public static void SerieContinua (int n)
+        public static void SerieContinua(int n)
         {
-            
+
             for (int i = 0; i < n; i++)
-            
+
                 System.Console.Write(i + ",");
         }
         /*Hacer una función a la que se le pase un número e imprima por pantalla la siguiente serie:
          Serie(10)-> 0,1,2,3,4,5,6,7,8,9 */
         public static void SerieContinuaV2(int n)
         {
-            if(n > 0)
-            
+            if (n > 0)
+
                 System.Console.Write("0");
-            
+
             for (int i = 1; i < n; i++)
 
-                System.Console.Write("," + i);    
+                System.Console.Write("," + i);
+        }
+        /* Hacer una función a la que se le pase un número n he imprima una serie de asteriscos 
+         en función del número que se pongan*/
+        public static void Asteriscos(int n)
+        {
+            for (int i = 0; i < n; i++)
+                System.Console.Write("*");
+        }
+        /* Hacer una función a la que se le pase un número n he imprima una serie de asteriscos 
+         en función del número que se pongan*/
+        public static void Asteriscosmás (int n)
+        {
+            for (int i = 0; i < n; i++)
+            {
+                if ((i % 2) == 0)
+                    System.Console.Write("*");
+                else
+                    System.Console.Write("+");
+            }  
+        }
+        /*Hace una función que devuelva el menor valor de 9 enteros*/
+        public static int Get9MinValue (int n1, int n2, int n3, int n4, int n5, int n6, int n7, int n8, int n9)
+        {
+            return Get3MinValue(Get3MinValue(n1, n2, n3), Get3MinValue(n4, n5, n6), Get3MinValue(n7, n8, n9));
+        }
+        /* Hcer una función que imprima por pantalla un cuadrado formado por "*" igual al número que haya puesto*/
+        public static void Cuadrado (int n)
+        {
+            for (int j = 0; j < n; j++)
+            {
+                for (int i = 0; i < n; i++)
+                {
+                    System.Console.Write("*");
+                }
+                System.Console.WriteLine();
+            }
         }
     }
+
 }
