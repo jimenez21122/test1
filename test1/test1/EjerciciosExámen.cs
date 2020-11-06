@@ -175,6 +175,100 @@ namespace test1
                 System.Console.WriteLine();
             }
         }
-    }
+        //Ejercicio
+        public static void Cuadrado2(int n)
+        {
+            for(int f = 0; f < n; f++)
+            {
+                for (int c = 0; c < n; c++)
+                {
+                    if ((f % 2)== 0)
+                        System.Console.Write("+");
+                    else
 
+                       System.Console.Write("*");
+                }
+                System.Console.WriteLine();
+            }
+        }
+        //Ejercicio
+        public static void Triangulo(int n)
+        {
+
+        }
+        //Ejercicio
+        public static void Triangulo2(int n)
+        { 
+            for(int f = 0; f < n; f++)
+            {
+                int nesp = n - f - 1;
+                int nast = f + 1;
+                for(int c = 0; c < nesp; c++)
+                {
+                    System.Console.Write(" ");
+                }
+                for(int c1 = 0; c1 < nast; c1++)
+                {
+                    System.Console.Write("*");
+                }
+                System.Console.WriteLine();
+            }
+        }
+        //Ejercicio
+        public static void Triangulo3(int n)
+        {
+            for (int f = 0; f < n; f++)
+            {
+                int nesp1 = n - f - 1;
+                int nesp2 = f * 2;
+                for (int c = 0; c < nesp1; c++)
+                {
+                    System.Console.Write(" ");
+                }
+                System.Console.Write("*");
+                for (int c1 = 0; c1 < nesp2; c1++)
+                {
+                    System.Console.Write(" ");
+                }
+                System.Console.Write("*");
+                System.Console.WriteLine();
+            }
+        }
+        //Ejercicio
+        public static void Triangulo4(int n)
+        {
+            for (int f = 0; f < n; f++)
+            {
+                int nesp1 = f * 2;
+                int nesp2 = (n- f - 1) * 2;
+                for (int c = 0; c < nesp1; c++)
+                {
+                    System.Console.Write(" ");
+                }
+                System.Console.Write("*");
+                for (int c1 = 0; c1 < nesp2; c1++)
+                {
+                    System.Console.Write(" ");
+                }
+                System.Console.Write("*");
+                System.Console.WriteLine();
+            }
+        }
+        public static void Triangulo5(int n)
+        {
+            Triangulo3(n);
+            Triangulo4(n);
+        }
+        /*Hacer una función que devuelva 2 elevado a n, siendo n el parámetro que recibe
+          la función*/
+        public static int square(int n)
+        {
+            int result = 1;
+            for(int i = 0; i < n; i++)
+            {
+                result *= 2;
+            }
+            return result;
+        }
+    }
 }
