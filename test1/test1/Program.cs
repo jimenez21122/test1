@@ -6,8 +6,8 @@ namespace test1
     {
         static void Main(string[] args)
         {
-            EjerciciosExámen.square(4);
-            int res = 
+            EjerciciosExámen.Sumatorio(4);
+            
         }
     }
 }

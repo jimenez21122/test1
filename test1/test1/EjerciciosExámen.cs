@@ -1,4 +1,6 @@
 ﻿
+using System.Reflection;
+
 namespace test1
 {
     class EjerciciosExámen
@@ -148,7 +150,7 @@ namespace test1
         }
         /* Hacer una función a la que se le pase un número n he imprima una serie de asteriscos 
          en función del número que se pongan*/
-        public static void Asteriscosmás (int n)
+        public static void Asteriscosmás(int n)
         {
             for (int i = 0; i < n; i++)
             {
@@ -156,15 +158,15 @@ namespace test1
                     System.Console.Write("*");
                 else
                     System.Console.Write("+");
-            }  
+            }
         }
         /*Hace una función que devuelva el menor valor de 9 enteros*/
-        public static int Get9MinValue (int n1, int n2, int n3, int n4, int n5, int n6, int n7, int n8, int n9)
+        public static int Get9MinValue(int n1, int n2, int n3, int n4, int n5, int n6, int n7, int n8, int n9)
         {
             return Get3MinValue(Get3MinValue(n1, n2, n3), Get3MinValue(n4, n5, n6), Get3MinValue(n7, n8, n9));
         }
         /* Hcer una función que imprima por pantalla un cuadrado formado por "*" igual al número que haya puesto*/
-        public static void Cuadrado (int n)
+        public static void Cuadrado(int n)
         {
             for (int j = 0; j < n; j++)
             {
@@ -178,15 +180,15 @@ namespace test1
         //Ejercicio
         public static void Cuadrado2(int n)
         {
-            for(int f = 0; f < n; f++)
+            for (int f = 0; f < n; f++)
             {
                 for (int c = 0; c < n; c++)
                 {
-                    if ((f % 2)== 0)
+                    if ((f % 2) == 0)
                         System.Console.Write("+");
                     else
 
-                       System.Console.Write("*");
+                        System.Console.Write("*");
                 }
                 System.Console.WriteLine();
             }
@@ -198,16 +200,16 @@ namespace test1
         }
         //Ejercicio
         public static void Triangulo2(int n)
-        { 
-            for(int f = 0; f < n; f++)
+        {
+            for (int f = 0; f < n; f++)
             {
                 int nesp = n - f - 1;
                 int nast = f + 1;
-                for(int c = 0; c < nesp; c++)
+                for (int c = 0; c < nesp; c++)
                 {
                     System.Console.Write(" ");
                 }
-                for(int c1 = 0; c1 < nast; c1++)
+                for (int c1 = 0; c1 < nast; c1++)
                 {
                     System.Console.Write("*");
                 }
@@ -240,7 +242,7 @@ namespace test1
             for (int f = 0; f < n; f++)
             {
                 int nesp1 = f * 2;
-                int nesp2 = (n- f - 1) * 2;
+                int nesp2 = (n - f - 1) * 2;
                 for (int c = 0; c < nesp1; c++)
                 {
                     System.Console.Write(" ");
@@ -264,11 +266,82 @@ namespace test1
         public static int square(int n)
         {
             int result = 1;
-            for(int i = 0; i < n; i++)
+            for (int i = 0; i < n; i++)
             {
                 result *= 2;
             }
             return result;
         }
-    }
+        //Hacer una función que imprima por pantalla la bandera de estdos Unidos
+        public static void USA()
+        {
+            for (int f = 0; f <= 10; f++)
+            {
+                for (int c = 0; c <= 70; c++)
+                {
+                    if (0 <= c && c <= 8 && 0 <= f && f <= 4)
+                    {
+                        int flag = f + c;
+                        if ((flag % 2) == 0)
+                        {
+                            System.Console.Write("+");
+                        }
+                        else
+                        {
+                            System.Console.Write(" ");
+                        }
+                    }
+                    else if ((f % 4) < 2)
+                    {
+                        System.Console.Write("=");
+                    }
+                    else
+                    {
+                        System.Console.Write(" ");
+                    }
+                }
+                System.Console.WriteLine();
+            }
+        }
+        //Hacer una función que devuelva la distancia entre dos puntos 2D
+        public static double distancia2D(double x1, double y1, double x2, double y2)
+        {
+            double vx = x1 - x2;
+            double vy = y1 - y2;
+            return System.Math.Sqrt(vx * vx + vy * vy);
+        }
+        //Hacer una función que imprima por pantalla la bandera de Japon.
+        public static void LiveInJapan()
+        {
+            for (int f = 0; f <= 15; f++)
+            {
+                for (int c = 0; c <= 70; c++)
+                {
+                    if (f == 0 || f == 14 || c == 0 || c == 69)
+                    {
+                        System.Console.Write("-");
+                    }
+                    else if (distancia2D(35, 7, c, f) <= 6)
+                    {
+                        System.Console.Write("O");
+                    }
+                    else
+                    {
+                        System.Console.Write(" ");
+                    }
+                }
+                System.Console.WriteLine();
+            }
+        }
+        //Implemanta una función que devuelva el sumatorio de un número 
+        public static int Sumatorio (int n)
+        {
+            int result = 1;
+            for (int i =  1; i <= n; i++)
+
+                result += i;
+          
+            return result;
+        }
+    }   
 }
