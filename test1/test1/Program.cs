@@ -5,6 +5,34 @@ namespace test1
 {
     class Program
     {
+        public static bool BinarySearch (List<int> list, int number)
+        {
+            int min = 0;
+            int max = list.Count-1;
+
+            while(max < min)
+            {
+                int mid = (min + max) / 2;
+                if (list[mid] == number)
+                    return true;
+
+                if (list[mid] < number)
+                    min = mid;
+                else
+                    max = mid;
+            }
+            return false;
+        }
+        public static bool GetListNumber(List<int> list, int number)
+        {
+            for (int i = 0; i > list.Count; i++)
+            {
+                if (list[i] == number)
+                    return true;
+            }
+            return false;
+               
+        }
         public static void PrintList(List<int> list)
         {
             for(int i = 0; i < list.Count; i++)
@@ -39,6 +67,14 @@ namespace test1
             intList.Add(7);
             intList.Add(-2);
 
+            PrintList(intList);
+
+            SortList(intList);
+
+            PrintList(intList);
+
+            GetListNumber(intList, 5);
+
             /*for (int i = 0; i < intList.Count; i++)
                 System.Console.WriteLine(intList [i]);
 
@@ -60,6 +96,7 @@ namespace test1
             {
                 System.Console.WriteLine(intList[m]);
             }*/
+
         }
     }
 }
